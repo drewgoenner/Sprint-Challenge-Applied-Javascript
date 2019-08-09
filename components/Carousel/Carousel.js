@@ -18,8 +18,7 @@
   </div>
 */
 
-const caroCont = document.querySelector(".carousel-container");
-  caroCont.appendChild(carousel1);
+
 
 
 function createCar(info) {
@@ -49,21 +48,21 @@ function createCar(info) {
 
   //add content
   // carousel1.textContent = "Hi there";
-  leftButton1.textContent = "Left";
-  rightButton1.textContent = "Right";
+  leftButton1.textContent = "<";
+  rightButton1.textContent = ">";
   img1.src = "./assets/carousel/computer.mountains.jpeg";
   img2.src = "./assets/carousel/computer.jpeg";
   img3.src = "./assets/carousel/trees.jpeg";
-  img4.src = "./assets/carousel/turntable.jpeg"
+  img4.src = "./assets/carousel/turntable.jpeg";
+
+  const caroCont = document.querySelector(".carousel-container");
+  caroCont.appendChild(carousel1);
+  
 
   //add listener
   leftButton1.addEventListener('click', (e) => {
 
   })
-  const caroCont = document.querySelector(".carousel-container");
-  caroCont.appendChild(carousel1);
   
   return carousel1;
-
-
 }
